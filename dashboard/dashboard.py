@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 
 # Load the dataset
-file_path = 'batik_exp_fixed.csv'
+file_path = 'dashboard/batik_exp_fixed.csv'
 df = pd.read_csv(file_path)
 
 # Sidebar with logo and filters
-st.sidebar.image("logobatik2.jpg", use_column_width=True)
+st.sidebar.image("dashboard/logobatik2.jpg", use_column_width=True)
 st.sidebar.title("Filters")
 year_range = st.sidebar.slider('Select Year Range', int(df['Tahun'].min()), int(df['Tahun'].max()), (int(df['Tahun'].min()), int(df['Tahun'].max())))
 
