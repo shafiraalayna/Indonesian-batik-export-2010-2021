@@ -48,6 +48,9 @@ st.markdown(css_styles, unsafe_allow_html=True)
 # Title of the app
 st.title("Indonesian Batik Export in 2010 - 2021 Analysis Dashboard")
 
+# Header of the key metrics
+st.header("Key Metrics")
+
 # Metrics for the dashboard
 col1, col2, col3 = st.columns(3)
 
