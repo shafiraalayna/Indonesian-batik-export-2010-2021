@@ -1,16 +1,7 @@
 import streamlit as st
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
-import textwrap
-import io
 import plotly.express as px
-from io import BytesIO
-import folium
-from streamlit_folium import folium_static
-import geopandas as gpd
-from geopy.geocoders import Nominatim
-import time
 
 # Load the dataset
 file_path = 'batik_exp_fixed.csv'
@@ -154,15 +145,6 @@ fig_annual_value = px.line(annual_value,
                            color_discrete_sequence=['#8B4513'],
                            labels={'Tahun' : 'Year', 'Nilai' : 'Value (USD)'})
 st.plotly_chart(fig_annual_value)
-
-# Line chart comparing total Batik export weight and value per year
-# st.subheader("Comparison of Total Batik Export Weight and Value per Year")
-# fig_comparison = px.line(df,
-#                          x='Tahun',
-#                          y=['Berat', 'Nilai'],
-#                          title='Comparison of Total Batik Export Weight and Value per Year',
-#                          color_discrete_map={'Berat': '#8B4513', 'Nilai': '#DEB887'})
-# st.plotly_chart(fig_comparison)
 
 # Line chart comparing total Batik export weight and value per year
 st.subheader("🔎 Comparison of Total Batik Export Weight and Value per Year 📊")
