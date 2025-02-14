@@ -111,7 +111,7 @@ fig_weight = px.choropleth(filtered_df,
                           hover_name='Negara',
                           color_continuous_scale=custom_color_scale,
                           range_color=(0, filtered_df['Berat'].max()),
-                          title='Export Destination Countries by Value',
+                          title='Export Destination Countries by Weight',
                           labels={'Berat': 'Weight (Kg)'})
 st.plotly_chart(fig_weight)
 
